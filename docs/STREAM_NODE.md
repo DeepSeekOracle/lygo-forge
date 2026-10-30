@@ -43,7 +43,7 @@ Do not stop OBS or restart the stream while it is live. Read logs before touchin
 
 ## LAN note
 
-Local PC: `10.0.0.65`. Stream PC: `<STREAM_HOST_IP>`. A QA server must bind to the LAN
+Local PC: `<LAN_IP>`. Stream PC: `<STREAM_HOST_IP>`. A QA server must bind to the LAN
 explicitly and be stopped after the test; do not expose it beyond the LAN.
 
 ## Verified release hash (2026-10-23)

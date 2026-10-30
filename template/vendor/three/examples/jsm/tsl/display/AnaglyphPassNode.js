@@ -182,7 +182,7 @@ const ANAGLYPH_MATRICES = {
 	},
 
 	// Dubois Anaglyph - Least-squares optimized for specific glasses
-	// From https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.7.6968&rep=rep1&type=pdf
+	// From https://citeseerx.ist.psu.edu/viewdoc/download?doi=<LAN_IP>.6968&rep=rep1&type=pdf
 	[ AnaglyphAlgorithm.DUBOIS ]: {
 		[ AnaglyphColorMode.RED_CYAN ]: createMatrixPair(
 			{

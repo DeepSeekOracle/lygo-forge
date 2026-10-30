@@ -445,7 +445,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
-### @sentry/server-utils 10.74.0
+### @sentry/server-utils <LAN_IP>
 
 A dependency of the Genex CLI, in the Genex plugin payload. Source:
 https://github.com/getsentry/sentry-javascript/blob/develop/LICENSE.md
