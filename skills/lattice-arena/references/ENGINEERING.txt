@@ -1,0 +1,85 @@
+==============================================================================
+LYGO ARENA - ENGINEERING INDEX
+==============================================================================
+slug        lattice-arena
+live        https://excavationpro.ca/games/lattice-arena/
+repo        D:\excavationpro-ca\games\lattice-arena
+project     <PROJECTS>\lattice-arena
+engine      web  (static page)
+genre       battler, spectate
+
+FILES BY KIND
+  audio=126, image=54, js=18, data=9, html=3, other=3, css=1, doc=1
+  total 80.9 MB in 215 files
+
+SCRIPTS (largest first)
+      136.6 KB  arena.js
+       81.2 KB  arena-ui.js
+       52.8 KB  tools/arena_check.js
+       50.1 KB  roster.js
+       48.9 KB  brain.js
+       36.7 KB  banter.js
+       26.4 KB  formation.js
+       26.0 KB  attacks.js
+       16.6 KB  tools/booth/bot.js
+       16.0 KB  tools/kit_probe.js
+       15.1 KB  tools/arena_doctrine.js
+       11.3 KB  director.js
+        7.1 KB  radio.js
+        6.7 KB  tools/trio_probe.js
+        5.9 KB  tools/arena_ladder.js
+        4.9 KB  tools/booth/login.js
+        2.8 KB  tools/gate_walls.js
+        2.1 KB  tools/_style_probe.js
+
+ASSET FOLDERS (images / audio / models)
+  assets/sfx                           audio=125
+  assets/floors                        image=27
+  assets                               image=23 audio=1
+  assets/crowd                         image=3
+  .                                    image=1
+
+PAGE REFERENCES (index.html)
+  https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0646320966060599
+  https://excavationpro.ca/games/lattice-arena/
+  ./favicon.svg
+  ./favicon.svg
+  https://excavationpro.ca/games/lattice-arena/assets/og.jpg
+  https://fonts.googleapis.com
+  https://fonts.gstatic.com
+  https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Syne:wght@600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap
+  ./arena.css?v=6.18
+  /games/hub.css?v=2
+  ./assets/lygo-arena-intro.mp3
+  /
+  /games/
+  https://www.paypal.com/paypalme/ExcavationPro
+  ./assets/caster-idle.mp4?v=2
+  ./assets/caster-talk.mp4?v=2
+  ./whitepaper.html
+  ./ledger.html
+  /games/lattice-crypt/
+  /games/
+  https://www.paypal.com/paypalme/ExcavationPro
+  ./radio.js?v=1.01
+  /games/arcade-ledger.js?v=6
+  ./roster.js?v=3.17
+  ./attacks.js?v=1.10
+  ./banter.js?v=1.07
+  ./director.js?v=1.01
+  ./formation.js?v=1.01
+  ./brain.js?v=9.10
+  ./arena.js?v=5.53
+  ./arena-ui.js?v=8.33
+
+VERSIONS
+  index.html                         e162f89625ffb9a8  LIVE MATCH
+  arena.js                           10c17572916c8b58  LIVE MATCH
+  arena-ui.js                        3e359bba6e6087b9  LIVE MATCH
+  tools/arena_check.js               e942782232b9edad  LIVE MATCH
+  live match: True
+
+SOURCES SEEN ON DISK
+  <DRIVE_D>\LYGO-UNITY-GAMES\assets-library\lattice-arena
+  mirrors (never copy from, never publish to):
+    D:\chatagent\games\lattice-arena

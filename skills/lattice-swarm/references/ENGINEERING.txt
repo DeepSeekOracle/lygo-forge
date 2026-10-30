@@ -1,0 +1,50 @@
+==============================================================================
+LATTICE SWARM - ENGINEERING INDEX
+==============================================================================
+slug        lattice-swarm
+live        https://excavationpro.ca/games/lattice-swarm/
+repo        D:\excavationpro-ca\games\lattice-swarm
+project     <PROJECTS>\lattice-swarm
+engine      web  (static page)
+genre       strategy, hex
+
+FILES BY KIND
+  image=10, html=2, data=2, css=2, other=1, js=1
+  total 0.9 MB in 18 files
+
+SCRIPTS (largest first)
+      265.9 KB  assets/index-Ce-4uMlV.js
+
+ASSET FOLDERS (images / audio / models)
+  __grok/install/assets/homescreen     image=6
+  .                                    image=3
+  __grok                               image=1
+
+PAGE REFERENCES (index.html)
+  https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0646320966060599
+  ./favicon.svg
+  https://excavationpro.ca/games/lattice-swarm/
+  https://fonts.googleapis.com
+  https://fonts.gstatic.com
+  https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap
+  /games/arcade-ledger.js?v=5
+  /games/hall-bridge.js?v=2
+  ./assets/index-Ce-4uMlV.js
+  ./assets/index-lGSL-RNk.css
+  /games/hub.css?v=5
+  /games/lygo-gate.css?v=1
+  /games/lygo-gate.js?v=1
+  /games/
+  /games/lattice-swarm/ledger.html
+  /
+
+VERSIONS
+  index.html                         83f922d40c6d411e  LIVE MATCH
+  assets/index-Ce-4uMlV.js           f8d03f9e11df9adb  LIVE MATCH
+  live match: True
+
+SOURCES SEEN ON DISK
+  <DRIVE_D>\LYGO APPS\lattice-swarm
+  mirrors (never copy from, never publish to):
+    D:\chatagent\games\lattice-swarm
+    D:\eternalhaven\games\lattice-swarm

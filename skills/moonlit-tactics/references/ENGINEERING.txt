@@ -1,0 +1,77 @@
+==============================================================================
+VALE TACTICS - ENGINEERING INDEX
+==============================================================================
+slug        moonlit-tactics
+live        https://excavationpro.ca/games/moonlit-tactics/
+repo        D:\excavationpro-ca\games\moonlit-tactics
+project     <PROJECTS>\moonlit-tactics
+engine      web  (three.js)
+genre       tactics, story
+
+FILES BY KIND
+  image=102, js=18, data=17, html=2, doc=1, css=1
+  total 37.1 MB in 141 files
+
+SCRIPTS (largest first)
+       91.3 KB  js/main.js
+       21.2 KB  js/tree.js
+       20.7 KB  js/armory.js
+       19.8 KB  js/town.js
+       15.5 KB  js/card.js
+       12.8 KB  js/inventory.js
+       12.3 KB  js/travel.js
+       11.1 KB  js/fx.js
+        6.2 KB  js/menu.js
+        5.9 KB  js/scene.js
+        5.5 KB  js/combat.js
+        5.1 KB  js/sfx.js
+        4.3 KB  js/save.js
+        3.9 KB  js/window.js
+        3.1 KB  js/ground.js
+        2.3 KB  js/battle_entry.js
+        2.2 KB  js/radio.js
+        2.0 KB  js/dungeon.js
+
+ASSET FOLDERS (images / audio / models)
+  assets/scenes/book2                  image=17
+  assets/scenes/book4                  image=17
+  assets/scenes/book3                  image=16
+  assets/scenes                        image=15
+  assets/scenes/figures                image=12
+  assets/props                         image=10
+  assets                               image=8
+  assets/terrain                       image=6
+  .                                    image=1
+
+PAGE REFERENCES (index.html)
+  https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0646320966060599
+  https://excavationpro.ca/games/moonlit-tactics/
+  favicon.svg
+  https://fonts.googleapis.com
+  https://fonts.gstatic.com
+  https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Syne:wght@600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap
+  game.css?v=20261008-book2
+  /games/
+  assets/scenes/figures/emberion.png?v=1
+  assets/scenes/figures/serenya.png?v=1
+  assets/scenes/figures/shade.png?v=2
+  assets/scenes/figures/bram.png?v=1
+  assets/scenes/figures/lyra.png?v=1
+  assets/scenes/figures/nessa.png?v=1
+  assets/scenes/figures/miralis.png?v=1
+  assets/scenes/figures/corvath.png?v=1
+  https://excavationpro.ca/books/book-1/
+  js/combat.js?v=20261007-click
+  js/main.js?v=20261008-books2
+
+VERSIONS
+  index.html                         5eae8862d0d9b917  LIVE MATCH
+  js/main.js                         f654ea94fce4541c  LIVE MATCH
+  js/tree.js                         f14ef58f1f53efa7  LIVE MATCH
+  js/armory.js                       3b33086f119352db  LIVE MATCH
+  live match: True
+
+SOURCES SEEN ON DISK
+  (none found - the repo copy is the only source)
+  mirrors (never copy from, never publish to):
+    D:\chatagent\games\moonlit-tactics

@@ -1,0 +1,33 @@
+==============================================================================
+LATTICE CHESS 3D - ENGINEERING INDEX
+==============================================================================
+slug        lattice-chess
+live        https://excavationpro.ca/games/lattice-chess/
+repo        D:\excavationpro-ca\games\lattice-chess
+project     <PROJECTS>\lattice-chess
+engine      web  (static page)
+genre       strategy, chess
+
+FILES BY KIND
+  other=7, image=4, html=1, css=1, js=1
+  total 14.9 MB in 14 files
+
+SCRIPTS (largest first)
+     1030.3 KB  assets/index-SF8W7yfH.js
+
+ASSET FOLDERS (images / audio / models)
+  .                                    image=4
+
+PAGE REFERENCES (index.html)
+  https://excavationpro.ca/games/lattice-chess/
+  ./favicon.svg
+  ./assets/index-SF8W7yfH.js
+  ./assets/index-Be6yVld4.css
+
+VERSIONS
+  index.html                         85a0c53a4ee94c5f  LIVE MATCH
+  assets/index-SF8W7yfH.js           cc70996e652663c7  LIVE MATCH
+  live match: True
+
+SOURCES SEEN ON DISK
+  (none found - the repo copy is the only source)

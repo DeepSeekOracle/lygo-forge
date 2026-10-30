@@ -1,0 +1,1125 @@
+{
+  "version": "1.0",
+  "source_note": "Synthesized from Unity Learn production cycle, Unity asset workflow, Anchorpoint asset management, SEELE 3D asset pipeline.",
+  "phases": [
+    "Pre-production",
+    "Production",
+    "Post-production",
+    "Operations"
+  ],
+  "stages": [
+    {
+      "id": "direction",
+      "title": "Direction & Intake",
+      "phase": "Intake",
+      "goal": "Lock the fantasy, scope, non-goals, target machine and risk.",
+      "agents": [
+        "producer",
+        "game-director",
+        "game-designer",
+        "qa-lead"
+      ],
+      "tools": [
+        "Forge docs"
+      ],
+      "inputs": [
+        "idea",
+        "constraints"
+      ],
+      "outputs": [
+        "GAME.md",
+        "scope",
+        "risk register",
+        "target hardware"
+      ],
+      "gate": "Non-goals, target hardware, owner and risk are explicit."
+    },
+    {
+      "id": "concept",
+      "title": "Concept & Prototype",
+      "phase": "Concept",
+      "goal": "Prove the core loop is worth making before content scale.",
+      "agents": [
+        "game-designer",
+        "gameplay-engineer",
+        "ux-designer",
+        "art-director"
+      ],
+      "tools": [
+        "engine prototype",
+        "paper test"
+      ],
+      "inputs": [
+        "GAME.md"
+      ],
+      "outputs": [
+        "prototype",
+        "core-loop test",
+        "kill criteria"
+      ],
+      "gate": "A playable loop exists with a recorded test and kill criteria."
+    },
+    {
+      "id": "design",
+      "title": "Design & Technical Plan",
+      "phase": "Design",
+      "goal": "Turn the loop into a buildable design and technical plan.",
+      "agents": [
+        "game-designer",
+        "systems-designer",
+        "level-designer",
+        "narrative-designer",
+        "technical-artist",
+        "art-director",
+        "audio-designer"
+      ],
+      "tools": [
+        "GDD",
+        "TASKS.json",
+        "TECH_SPEC.md",
+        "ASSET_PLAN.md"
+      ],
+      "inputs": [
+        "prototype"
+      ],
+      "outputs": [
+        "GDD",
+        "systems spec",
+        "level plan",
+        "asset plan",
+        "tech spec"
+      ],
+      "gate": "Every mechanic has an owner, acceptance test and budget."
+    },
+    {
+      "id": "art-bible",
+      "title": "Art Bible & Preproduction",
+      "phase": "Art Bible",
+      "goal": "Lock style, references, asset specs and pipeline tests.",
+      "agents": [
+        "art-director",
+        "concept-artist",
+        "2d-artist",
+        "3d-modeler",
+        "technical-artist",
+        "asset-scout"
+      ],
+      "tools": [
+        "image/PD Howler",
+        "Blender",
+        "asset pointers"
+      ],
+      "inputs": [
+        "GDD",
+        "ART_BIBLE.md"
+      ],
+      "outputs": [
+        "style guide",
+        "reference board",
+        "asset manifest",
+        "pipeline probes"
+      ],
+      "gate": "One representative asset passes the entire source→engine path with licence and evidence."
+    },
+    {
+      "id": "vertical-slice",
+      "title": "Vertical Slice",
+      "phase": "Vertical Slice",
+      "goal": "Build one complete, representative, playable slice.",
+      "agents": [
+        "producer",
+        "game-designer",
+        "gameplay-engineer",
+        "level-designer",
+        "2d-artist",
+        "3d-modeler",
+        "animator",
+        "technical-artist",
+        "audio-designer",
+        "qa-lead"
+      ],
+      "tools": [
+        "engine",
+        "Blender",
+        "PD Howler",
+        "Rytmik"
+      ],
+      "inputs": [
+        "design",
+        "art bible"
+      ],
+      "outputs": [
+        "playable slice",
+        "imported assets",
+        "QA evidence",
+        "perf numbers"
+      ],
+      "gate": "Slice runs start-to-finish at target quality and budget."
+    },
+    {
+      "id": "production",
+      "title": "Production",
+      "phase": "Production",
+      "goal": "Produce the planned content in small reviewed tasks.",
+      "agents": [
+        "producer",
+        "gameplay-engineer",
+        "ui-programmer",
+        "level-designer",
+        "2d-artist",
+        "3d-modeler",
+        "animator",
+        "vfx-artist",
+        "audio-designer",
+        "technical-artist",
+        "asset-scout",
+        "qa-lead"
+      ],
+      "tools": [
+        "Blender",
+        "PD Howler",
+        "Rytmik",
+        "RPG Maker",
+        "TyranoBuilder",
+        "engine"
+      ],
+      "inputs": [
+        "approved tasks"
+      ],
+      "outputs": [
+        "code",
+        "assets",
+        "maps",
+        "audio",
+        "animation",
+        "tests"
+      ],
+      "gate": "Each task has scope, evidence and Master acceptance."
+    },
+    {
+      "id": "integration",
+      "title": "Integration & Assembly",
+      "phase": "Production",
+      "goal": "Assemble systems and content into a coherent build.",
+      "agents": [
+        "technical-artist",
+        "gameplay-engineer",
+        "ui-programmer",
+        "animator",
+        "audio-designer",
+        "qa-lead"
+      ],
+      "tools": [
+        "engine",
+        "asset manifest",
+        "build CLI"
+      ],
+      "inputs": [
+        "accepted assets/code"
+      ],
+      "outputs": [
+        "integrated build",
+        "prefabs/scenes",
+        "manifest",
+        "known limitations"
+      ],
+      "gate": "Clean-project import and end-to-end route pass."
+    },
+    {
+      "id": "qa-polish",
+      "title": "QA & Polish",
+      "phase": "QA",
+      "goal": "Find, reproduce and close quality, stability and performance defects.",
+      "agents": [
+        "qa-lead",
+        "performance-engineer",
+        "ux-designer",
+        "localization-accessibility",
+        "gameplay-engineer"
+      ],
+      "tools": [
+        "test plan",
+        "profiler",
+        "browser/engine",
+        "bug board"
+      ],
+      "inputs": [
+        "integrated build"
+      ],
+      "outputs": [
+        "QA.md",
+        "bug reports",
+        "perf report",
+        "a11y notes"
+      ],
+      "gate": "No blocker/crash; evidence for every fix; human playtest."
+    },
+    {
+      "id": "release",
+      "title": "Release Candidate",
+      "phase": "Release",
+      "goal": "Produce a reproducible, licensed, human-approved build.",
+      "agents": [
+        "producer",
+        "release-engineer",
+        "qa-lead",
+        "asset-scout"
+      ],
+      "tools": [
+        "build CLI",
+        "checksums",
+        "licence bundle"
+      ],
+      "inputs": [
+        "QA pass"
+      ],
+      "outputs": [
+        "RC build",
+        "manifest",
+        "licence bundle",
+        "release notes"
+      ],
+      "gate": "Human signoff; no auto-publish."
+    },
+    {
+      "id": "post-release",
+      "title": "Post-release / Live Ops",
+      "phase": "Release",
+      "goal": "Patch safely and learn from operator feedback.",
+      "agents": [
+        "producer",
+        "release-engineer",
+        "qa-lead"
+      ],
+      "tools": [
+        "issue log",
+        "rollback",
+        "telemetry if consented"
+      ],
+      "inputs": [
+        "release",
+        "feedback"
+      ],
+      "outputs": [
+        "patch",
+        "postmortem",
+        "rollback plan"
+      ],
+      "gate": "Every patch has a rollback and a human owner."
+    }
+  ],
+  "roles": {
+    "producer": {
+      "title": "Producer / Delivery Lead",
+      "mission": "Own scope, schedule, risks, gates and handoffs.",
+      "skill": "forge-worker",
+      "worker_class": "reasoning",
+      "tools": [
+        "Forge board",
+        "GDD",
+        "risk log"
+      ],
+      "outputs": [
+        "scope",
+        "milestone plan",
+        "risk register",
+        "gate decision"
+      ],
+      "acceptance": [
+        "scope and non-goals explicit",
+        "owner and date on every gate",
+        "no unapproved scope"
+      ],
+      "never": [
+        "approve unreviewed work",
+        "promise a date without evidence"
+      ],
+      "handoff_to": [
+        "game-director",
+        "qa-lead"
+      ]
+    },
+    "game-director": {
+      "title": "Game Director",
+      "mission": "Protect the fantasy, pillars, tone and player experience.",
+      "skill": "forge-worker",
+      "worker_class": "reasoning",
+      "tools": [
+        "GDD",
+        "reference board",
+        "playtest notes"
+      ],
+      "outputs": [
+        "pillars",
+        "creative decisions",
+        "review notes"
+      ],
+      "acceptance": [
+        "pillars visible in the slice",
+        "decisions recorded"
+      ],
+      "never": [
+        "change the core fantasy without a decision record"
+      ],
+      "handoff_to": [
+        "game-designer",
+        "art-director"
+      ]
+    },
+    "game-designer": {
+      "title": "Game Designer",
+      "mission": "Turn pillars into rules, loops, progression and acceptance tests.",
+      "skill": "forge-worker",
+      "worker_class": "reasoning",
+      "tools": [
+        "GDD",
+        "prototype",
+        "TASKS.json"
+      ],
+      "outputs": [
+        "core loop",
+        "mechanics spec",
+        "balancing notes",
+        "acceptance tests"
+      ],
+      "acceptance": [
+        "loop playable",
+        "edge cases named",
+        "tests reproducible"
+      ],
+      "never": [
+        "add a mechanic with no player-facing purpose"
+      ],
+      "handoff_to": [
+        "gameplay-engineer",
+        "level-designer",
+        "qa-lead"
+      ]
+    },
+    "systems-designer": {
+      "title": "Systems / Economy Designer",
+      "mission": "Design progression, economy, drop tables and tuning.",
+      "skill": "forge-worker",
+      "worker_class": "reasoning",
+      "tools": [
+        "spreadsheet",
+        "GDD",
+        "telemetry plan"
+      ],
+      "outputs": [
+        "tuning tables",
+        "economy rules",
+        "failure cases"
+      ],
+      "acceptance": [
+        "numbers reproducible",
+        "exploit paths considered"
+      ],
+      "never": [
+        "ship an economy with no sink/source audit"
+      ],
+      "handoff_to": [
+        "gameplay-engineer",
+        "qa-lead"
+      ]
+    },
+    "level-designer": {
+      "title": "Level / World Designer",
+      "mission": "Design spaces, encounters, pacing, navigation and collision.",
+      "skill": "forge-2d-map-worker",
+      "worker_class": "tool-assisted",
+      "tools": [
+        "map editor",
+        "RPG Maker",
+        "engine scene",
+        "collision data",
+        "Pixelorama (MIT)"
+      ],
+      "outputs": [
+        "blockout",
+        "encounter plan",
+        "collision map",
+        "playtest route"
+      ],
+      "acceptance": [
+        "traversable start-to-goal",
+        "readable landmarks",
+        "performance budget"
+      ],
+      "never": [
+        "decorate before blockout approval"
+      ],
+      "handoff_to": [
+        "technical-artist",
+        "gameplay-engineer"
+      ]
+    },
+    "narrative-designer": {
+      "title": "Narrative Designer",
+      "mission": "Write story, dialogue, lore and narrative state.",
+      "skill": "forge-worker",
+      "worker_class": "reasoning",
+      "tools": [
+        "GDD",
+        "dialogue script",
+        "localization sheet"
+      ],
+      "outputs": [
+        "script",
+        "branch map",
+        "lore sheet"
+      ],
+      "acceptance": [
+        "state transitions tested",
+        "text fits UI",
+        "no unsupported lore"
+      ],
+      "never": [
+        "write dialogue that cannot be localized"
+      ],
+      "handoff_to": [
+        "game-designer",
+        "localization-accessibility"
+      ]
+    },
+    "ux-designer": {
+      "title": "UX / UI Designer",
+      "mission": "Design readable, accessible HUD, menus, onboarding and feedback.",
+      "skill": "forge-ui-worker",
+      "worker_class": "reasoning",
+      "tools": [
+        "Figma-like spec",
+        "UI kit",
+        "accessibility checklist",
+        "UI UX Pro Max (MIT)",
+        "ascii-magic-art (MIT)",
+        "VFD/phosphor UI direction",
+        "Diagram Design (MIT)",
+        "HyperFrames (Apache-2.0)",
+        "ComfyArt local canvas (MIT)",
+        "ThreeUI Community (MIT)"
+      ],
+      "outputs": [
+        "flow",
+        "wireframes",
+        "UI spec",
+        "accessibility notes"
+      ],
+      "acceptance": [
+        "keyboard/gamepad path",
+        "contrast and scale",
+        "first-run comprehension"
+      ],
+      "never": [
+        "ship text under 12px at target resolution"
+      ],
+      "handoff_to": [
+        "ui-programmer",
+        "qa-lead"
+      ]
+    },
+    "art-director": {
+      "title": "Art Director",
+      "mission": "Own style, palette, silhouette, readability and art acceptance.",
+      "skill": "forge-image-worker",
+      "worker_class": "reasoning",
+      "tools": [
+        "reference board",
+        "ART_BIBLE.md",
+        "asset review",
+        "open prompt library (reviewed)",
+        "Lemo style library (reviewed)",
+        "Opus 5.5 motion prompt library (reviewed)"
+      ],
+      "outputs": [
+        "style guide",
+        "palette",
+        "reference board",
+        "acceptance notes"
+      ],
+      "acceptance": [
+        "style consistent across assets",
+        "readable at gameplay camera"
+      ],
+      "never": [
+        "approve an asset with unknown licence"
+      ],
+      "handoff_to": [
+        "concept-artist",
+        "technical-artist"
+      ]
+    },
+    "concept-artist": {
+      "title": "Concept Artist",
+      "mission": "Explore shape language, characters, props and environments.",
+      "skill": "forge-image-worker",
+      "worker_class": "tool-assisted",
+      "tools": [
+        "image generator",
+        "paint tool",
+        "reference board"
+      ],
+      "outputs": [
+        "concept sheets",
+        "turnarounds",
+        "approved references"
+      ],
+      "acceptance": [
+        "references cite sources",
+        "turnaround consistent",
+        "silhouette reads"
+      ],
+      "never": [
+        "copy a living artist style without permission"
+      ],
+      "handoff_to": [
+        "2d-artist",
+        "3d-modeler"
+      ]
+    },
+    "2d-artist": {
+      "title": "2D Artist",
+      "mission": "Create sprites, tiles, maps, UI, portraits and 2D FX.",
+      "skill": "forge-2d-character-worker",
+      "worker_class": "tool-assisted",
+      "tools": [
+        "PD Howler",
+        "image generator",
+        "sprite sheet",
+        "tileset",
+        "Pixelorama (MIT)",
+        "ComfyArt local canvas (MIT)"
+      ],
+      "outputs": [
+        "sprites",
+        "tiles",
+        "maps",
+        "UI art",
+        "atlases"
+      ],
+      "acceptance": [
+        "consistent scale/palette",
+        "pivot and alpha correct",
+        "engine import tested"
+      ],
+      "never": [
+        "use unlicensed reference art"
+      ],
+      "handoff_to": [
+        "technical-artist",
+        "animator"
+      ]
+    },
+    "3d-modeler": {
+      "title": "3D Modeler",
+      "mission": "Create game-ready meshes, UVs, materials and LODs.",
+      "skill": "forge-blender-worker",
+      "worker_class": "tool",
+      "tools": [
+        "Blender",
+        "glTF exporter",
+        "reference board",
+        "img2threejs (Apache-2.0)",
+        "Mixamo/Blender humanoid rig"
+      ],
+      "outputs": [
+        "source .blend",
+        "GLB/FBX",
+        "UV/material notes",
+        "LODs"
+      ],
+      "acceptance": [
+        "scale/axes/pivot",
+        "material channels",
+        "triangle budget",
+        "clean import"
+      ],
+      "never": [
+        "deliver a model with unknown licence or no source"
+      ],
+      "handoff_to": [
+        "technical-artist",
+        "animator"
+      ]
+    },
+    "technical-artist": {
+      "title": "Technical Artist",
+      "mission": "Own import, shaders, rigs, batching, optimization and engine handoff.",
+      "skill": "forge-unity-worker",
+      "worker_class": "tool-assisted",
+      "tools": [
+        "Blender",
+        "Unity/Web engine",
+        "profiler",
+        "asset manifest",
+        "Hi3D v1.0 (external/free)",
+        "NVIDIA SimReady OpenUSD (CC BY, reviewed)",
+        "ThreeJS Assets free tier",
+        "gltfpack (MIT)"
+      ],
+      "outputs": [
+        "import settings",
+        "prefab/scene",
+        "shader/material",
+        "perf report"
+      ],
+      "acceptance": [
+        "clean-project import",
+        "draw calls/tris/memory within budget",
+        "dependencies travel"
+      ],
+      "never": [
+        "approve a visual that breaks the performance budget"
+      ],
+      "handoff_to": [
+        "gameplay-engineer",
+        "qa-lead"
+      ]
+    },
+    "animator": {
+      "title": "Animator / Rigger",
+      "mission": "Create rigs, clips, blends and gameplay motion.",
+      "skill": "forge-blender-worker",
+      "worker_class": "tool",
+      "tools": [
+        "Blender",
+        "Mixamo/reference",
+        "animation clips",
+        "img2threejs (Apache-2.0)",
+        "Mixamo/Blender humanoid rig"
+      ],
+      "outputs": [
+        "rig",
+        "clips",
+        "blend tree notes",
+        "root-motion spec"
+      ],
+      "acceptance": [
+        "loop seams",
+        "foot contact",
+        "transition test"
+      ],
+      "never": [
+        "ship animation without in-engine playback evidence"
+      ],
+      "handoff_to": [
+        "technical-artist",
+        "qa-lead"
+      ]
+    },
+    "vfx-artist": {
+      "title": "VFX Artist",
+      "mission": "Create readable, budgeted effects and feedback.",
+      "skill": "forge-image-worker",
+      "worker_class": "tool-assisted",
+      "tools": [
+        "engine particles",
+        "sprite sheets",
+        "after-effects-like tools"
+      ],
+      "outputs": [
+        "VFX prefab",
+        "textures",
+        "budget notes"
+      ],
+      "acceptance": [
+        "reads in combat",
+        "no overdraw blowout",
+        "clean loop"
+      ],
+      "never": [
+        "hide gameplay-critical information behind an effect"
+      ],
+      "handoff_to": [
+        "technical-artist",
+        "qa-lead"
+      ]
+    },
+    "audio-designer": {
+      "title": "Audio Designer",
+      "mission": "Create and integrate music, SFX, ambience and mix states.",
+      "skill": "forge-audio-worker",
+      "worker_class": "tool-assisted",
+      "tools": [
+        "Rytmik",
+        "Freesound",
+        "audio editor",
+        "engine mixer",
+        "Kokoro TTS (pointer)",
+        "Bark 3.0 ASR (CC BY, local)",
+        "Ming 3.0 TTS 0.5B (local)",
+        "Sonicproof audio QA (MIT)",
+        "Audio Studio MCP / Stable Audio 3 (local)"
+      ],
+      "outputs": [
+        "music",
+        "SFX",
+        "mix map",
+        "licence log"
+      ],
+      "acceptance": [
+        "loop/duration",
+        "loudness/format",
+        "no clipping",
+        "licence recorded"
+      ],
+      "never": [
+        "use unlicensed audio"
+      ],
+      "handoff_to": [
+        "technical-artist",
+        "qa-lead"
+      ]
+    },
+    "gameplay-engineer": {
+      "title": "Gameplay Engineer",
+      "mission": "Implement mechanics, controls, state, save and game feel.",
+      "skill": "forge-unity-worker",
+      "worker_class": "reasoning/tool",
+      "tools": [
+        "engine",
+        "IDE",
+        "profiler",
+        "tests",
+        "ThreeJS Assets free tier"
+      ],
+      "outputs": [
+        "code",
+        "scenes",
+        "tests",
+        "build"
+      ],
+      "acceptance": [
+        "tests pass",
+        "no console errors",
+        "controls verified"
+      ],
+      "never": [
+        "mark a task done without a runnable check"
+      ],
+      "handoff_to": [
+        "qa-lead",
+        "technical-artist"
+      ]
+    },
+    "ui-programmer": {
+      "title": "UI Programmer",
+      "mission": "Implement HUD, menus, localization and input navigation.",
+      "skill": "forge-web-worker",
+      "worker_class": "reasoning/tool",
+      "tools": [
+        "engine UI",
+        "font pipeline",
+        "localization sheet",
+        "ThreeJS Assets free tier",
+        "UI UX Pro Max (MIT)",
+        "img2threejs (Apache-2.0)",
+        "pixel-3D camera snapping",
+        "ascii-magic-art (MIT)",
+        "camera-language shot planning",
+        "VFD/phosphor UI direction",
+        "Diagram Design (MIT)",
+        "ComfyArt local canvas (MIT)",
+        "ThreeUI Community (MIT)"
+      ],
+      "outputs": [
+        "UI code",
+        "prefabs",
+        "input map"
+      ],
+      "acceptance": [
+        "keyboard/gamepad",
+        "safe areas",
+        "text overflow tested"
+      ],
+      "never": [
+        "ship placeholder text"
+      ],
+      "handoff_to": [
+        "qa-lead",
+        "localization-accessibility"
+      ]
+    },
+    "tools-engineer": {
+      "title": "Tools / Pipeline Engineer",
+      "mission": "Build import, validation, build and asset-pipeline automation.",
+      "skill": "forge-web-worker",
+      "worker_class": "tool",
+      "tools": [
+        "Python",
+        "Blender API",
+        "engine CLI",
+        "CI",
+        "llmfit (MIT)",
+        "fine-tune stack (pointer)",
+        "ThreeJS Assets free tier",
+        "UI UX Pro Max (MIT)",
+        "img2threejs (Apache-2.0)",
+        "pixel-3D camera snapping",
+        "ascii-magic-art (MIT)",
+        "camera-language shot planning",
+        "VFD/phosphor UI direction",
+        "Diagram Design (MIT)",
+        "ComfyArt local canvas (MIT)",
+        "ThreeUI Community (MIT)"
+      ],
+      "outputs": [
+        "pipeline script",
+        "validator",
+        "build job"
+      ],
+      "acceptance": [
+        "repeatable on clean project",
+        "logs evidence"
+      ],
+      "never": [
+        "automate an unverified destructive step"
+      ],
+      "handoff_to": [
+        "technical-artist",
+        "release-engineer"
+      ]
+    },
+    "qa-lead": {
+      "title": "QA Lead",
+      "mission": "Design test plans, reproduce bugs, gate quality and evidence.",
+      "skill": "forge-qa-worker",
+      "worker_class": "reasoning/tool",
+      "tools": [
+        "test plan",
+        "browser/engine",
+        "bug board",
+        "logs"
+      ],
+      "outputs": [
+        "test plan",
+        "bug reports",
+        "QA.md",
+        "release verdict"
+      ],
+      "acceptance": [
+        "repro steps",
+        "expected/actual",
+        "evidence attached"
+      ],
+      "never": [
+        "accept a 200 response as a gameplay test"
+      ],
+      "handoff_to": [
+        "producer",
+        "gameplay-engineer"
+      ]
+    },
+    "performance-engineer": {
+      "title": "Performance Engineer",
+      "mission": "Measure and fix frame time, memory, loading and stability.",
+      "skill": "forge-qa-worker",
+      "worker_class": "tool-assisted",
+      "tools": [
+        "profiler",
+        "browser perf",
+        "engine stats"
+      ],
+      "outputs": [
+        "measurements",
+        "bottleneck report",
+        "fixes"
+      ],
+      "acceptance": [
+        "before/after numbers on named hardware",
+        "no regression"
+      ],
+      "never": [
+        "optimize without a measurement"
+      ],
+      "handoff_to": [
+        "technical-artist",
+        "qa-lead"
+      ]
+    },
+    "asset-scout": {
+      "title": "Asset Scout / Librarian",
+      "mission": "Find, licence, register and hand off external or generated assets.",
+      "skill": "forge-asset-pointer",
+      "worker_class": "asset",
+      "tools": [
+        "asset source catalogue",
+        "licence log",
+        "hash/manifest",
+        "browser"
+      ],
+      "outputs": [
+        "pointer records",
+        "licence log",
+        "inbox handoff",
+        "source notes"
+      ],
+      "acceptance": [
+        "source URL",
+        "licence and attribution",
+        "hash",
+        "path",
+        "owner/task"
+      ],
+      "never": [
+        "download or ship an asset with unknown rights",
+        "overwrite source files"
+      ],
+      "handoff_to": [
+        "art-director",
+        "technical-artist"
+      ]
+    },
+    "localization-accessibility": {
+      "title": "Localization / Accessibility",
+      "mission": "Make text, UI, input and audio accessible and localizable.",
+      "skill": "forge-qa-worker",
+      "worker_class": "reasoning",
+      "tools": [
+        "string table",
+        "contrast checker",
+        "input remap"
+      ],
+      "outputs": [
+        "string table",
+        "a11y audit",
+        "locale notes"
+      ],
+      "acceptance": [
+        "no hardcoded strings",
+        "contrast/scale",
+        "remapping"
+      ],
+      "never": [
+        "assume English-only or mouse-only"
+      ],
+      "handoff_to": [
+        "ui-programmer",
+        "qa-lead"
+      ]
+    },
+    "release-engineer": {
+      "title": "Release Engineer",
+      "mission": "Produce reproducible builds, manifests, licences and rollback.",
+      "skill": "forge-unity-worker",
+      "worker_class": "tool",
+      "tools": [
+        "build CLI",
+        "checksums",
+        "licence bundle",
+        "release notes",
+        "ThreeJS Assets free tier"
+      ],
+      "outputs": [
+        "RC build",
+        "manifest",
+        "checksums",
+        "rollback"
+      ],
+      "acceptance": [
+        "clean build",
+        "all licences included",
+        "human signoff"
+      ],
+      "never": [
+        "publish without approval"
+      ],
+      "handoff_to": [
+        "producer"
+      ]
+    }
+  },
+  "tool_map": {
+    "image": {
+      "agents": [
+        "forge-image-worker",
+        "OpenCode",
+        "NVIDIA"
+      ],
+      "tools": [
+        "Qwen-Image 2.1",
+        "PD Howler 11"
+      ],
+      "rule": "Source, licence and prompt/seed recorded."
+    },
+    "2d": {
+      "agents": [
+        "forge-2d-character-worker",
+        "forge-2d-map-worker",
+        "PD Howler 11"
+      ],
+      "tools": [
+        "PD Howler 11",
+        "image generator"
+      ],
+      "rule": "Sprite/map/tile specs, pivots and atlases recorded."
+    },
+    "3d": {
+      "agents": [
+        "forge-blender-worker",
+        "Blender Tool Worker"
+      ],
+      "tools": [
+        "Blender 5.2.3",
+        "glTF exporter"
+      ],
+      "rule": "Source .blend, delivery GLB/FBX, scale/axes/pivot evidence."
+    },
+    "animation": {
+      "agents": [
+        "forge-blender-worker",
+        "Blender Tool Worker"
+      ],
+      "tools": [
+        "Blender",
+        "rig/clip spec"
+      ],
+      "rule": "Loop, contact and in-engine playback evidence."
+    },
+    "audio": {
+      "agents": [
+        "forge-audio-worker",
+        "Rytmik Studio",
+        "Rytmik Ultimate"
+      ],
+      "tools": [
+        "Rytmik Studio/Ultimate",
+        "Freesound"
+      ],
+      "rule": "Loop/format/loudness/licence recorded."
+    },
+    "maps": {
+      "agents": [
+        "forge-2d-map-worker",
+        "RPG Maker MV",
+        "RPG Maker VX Ace"
+      ],
+      "tools": [
+        "RPG Maker MV/VX Ace"
+      ],
+      "rule": "Collision and start-to-goal route tested."
+    },
+    "vn": {
+      "agents": [
+        "forge-web-worker",
+        "TyranoBuilder"
+      ],
+      "tools": [
+        "TyranoBuilder"
+      ],
+      "rule": "Branch/state and export tested."
+    },
+    "engine": {
+      "agents": [
+        "forge-unity-worker",
+        "forge-web-worker",
+        "OpenCode"
+      ],
+      "tools": [
+        "Unity",
+        "browser"
+      ],
+      "rule": "Clean-project run, console and performance evidence."
+    }
+  }
+}

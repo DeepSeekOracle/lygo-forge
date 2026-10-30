@@ -1,0 +1,24 @@
+{
+  "jev_yes_no": {
+    "state": "The package arrived this morning.",
+    "instructions": "Has the package arrived?"
+  },
+  "jev_choose": {
+    "state": "The package arrived this morning.",
+    "instructions": "What delivery status is described?",
+    "criteria": {
+      "delivered": "The package has arrived.",
+      "in_transit": "The package is on its way.",
+      "unknown": "The status cannot be determined."
+    }
+  },
+  "jev_score": {
+    "state": "The package arrived a day late, but the contents are fine.",
+    "instructions": "How serious is the delivery problem?",
+    "criteria": [
+      "No delivery problem is described.",
+      "A delay or inconvenience occurred, but the contents are usable.",
+      "The package is lost or its contents are unusable."
+    ]
+  }
+}

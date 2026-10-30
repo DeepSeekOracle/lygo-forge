@@ -1,0 +1,37 @@
+==============================================================================
+LATTICE TENNIS - ENGINEERING INDEX
+==============================================================================
+slug        lattice-tennis
+live        https://excavationpro.ca/games/lattice-tennis/
+repo        D:\excavationpro-ca\games\lattice-tennis
+project     <PROJECTS>\lattice-tennis
+engine      web  (static page)
+genre       sports, tennis
+
+FILES BY KIND
+  audio=33, image=8, model=7, other=3, wasm=2, html=1, js=1, css=1, unity=1
+  total 39.8 MB in 57 files
+
+SCRIPTS (largest first)
+      810.5 KB  assets/index-BeFmnWiY.js
+
+ASSET FOLDERS (images / audio / models)
+  assets/audio/tts                     audio=29
+  assets/models                        model=7
+  .                                    image=4
+  assets/audio                         audio=4
+  assets/textures/court                image=4
+
+PAGE REFERENCES (index.html)
+  https://excavationpro.ca/games/lattice-tennis/
+  ./favicon.svg
+  ./assets/index-BeFmnWiY.js
+  ./assets/index-nN5dXADI.css
+
+VERSIONS
+  index.html                         c756ff2690d157d2  LIVE MATCH
+  assets/index-BeFmnWiY.js           df03946bf414b870  LIVE MATCH
+  live match: True
+
+SOURCES SEEN ON DISK
+  (none found - the repo copy is the only source)

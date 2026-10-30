@@ -1,0 +1,40 @@
+{
+  "name": "lygo-asset-foundry",
+  "displayName": "LYGO Asset Foundry",
+  "version": "0.1.0",
+  "description": "Local agent-callable game asset pipeline: contract-aware Qwen-Image generation, magenta cutouts, sprite sheets, tile validation, manifests, queue worker, MCP, and Unity export. No auto-publish; no 3D claims without real 3D weights.",
+  "slug": "lygo-asset-foundry",
+  "publisher": "deepseekoracle",
+  "license": "MIT-0",
+  "homepage": "https://chatagent.ca/games/lattice-arena/",
+  "signature": "LYGO-ASSET-FOUNDRY-SKILL-v0.1.0",
+  "steward": "Justin Helmer / Excavationpro / Lightfather",
+  "entry": "SKILL.md",
+  "os": ["windows"],
+  "requires": {
+    "anyBins": ["python"],
+    "local_paths": {
+      "foundry": "<DRIVE_D>\LYGO\\asset-foundry",
+      "qwen_sd_cli": "<MEDIA>\\tools\\sd\\sd-cli.exe",
+      "unity_library": "<DRIVE_D>\LYGO-UNITY-GAMES\\assets-library"
+    }
+  },
+  "permissions": {
+    "skill": {
+      "network": false,
+      "subprocess": "only the local foundry CLI and the explicitly requested image/queue commands",
+      "shell": false,
+      "filesystem": {
+        "read": "<DRIVE_D>\LYGO\\asset-foundry, configured engine/model paths, requested input pack",
+        "write": "<DRIVE_D>\LYGO\\asset-foundry\\packs, queue, logs, and the requested ingest destination"
+      }
+    }
+  },
+  "security": {
+    "local_first": true,
+    "no_auto_publish": true,
+    "no_autoupdate": true,
+    "no_telemetry": true,
+    "human_review_required": true
+  }
+}

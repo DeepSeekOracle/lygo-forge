@@ -1,0 +1,56 @@
+==============================================================================
+LATTICE CORRIDOR - ENGINEERING INDEX
+==============================================================================
+slug        lattice-corridor
+live        https://excavationpro.ca/games/lattice-corridor/
+repo        D:\excavationpro-ca\games\lattice-corridor
+project     <PROJECTS>\lattice-corridor
+engine      web  (PrBoom)
+genre       action, fps
+
+FILES BY KIND
+  other=9, js=5, css=3, image=3, doc=2, wasm=2, html=1, unity=1
+  total 57.4 MB in 26 files
+
+SCRIPTS (largest first)
+      198.9 KB  engine/index.js
+       60.2 KB  engine/worker-bundle.js
+       12.0 KB  corridor.js
+        7.9 KB  engine/libarchive.js
+        5.1 KB  engine/oly.js
+
+ASSET FOLDERS (images / audio / models)
+  assets                               image=2
+  .                                    image=1
+
+PAGE REFERENCES (index.html)
+  https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0646320966060599
+  https://excavationpro.ca/games/lattice-corridor/
+  ./favicon.svg
+  https://fonts.googleapis.com
+  https://fonts.gstatic.com
+  https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=Syne:wght@700;800&family=Source+Sans+3:wght@400;600&display=swap
+  ./corridor.css?v=2
+  /games/lygo-gate.css?v=1
+  /games/lygo-gate.js?v=1
+  /games/
+  /games/
+  https://excavationpro.ca/books/
+  https://www.paypal.com/paypalme/ExcavationPro
+  https://www.patreon.com/Excavationpro/posts/chatagent-ca-api-170485961
+  ./assets/menu.jpg
+  /games/
+  ./SOURCE.md
+  ./corridor.js?v=4
+
+VERSIONS
+  index.html                         743d4fb6a774a15d  LIVE MATCH
+  engine/index.js                    e12d2b83171e9281  LIVE MATCH
+  engine/worker-bundle.js            552fd4c4e96e677b  LIVE MATCH
+  corridor.js                        566b44e6075bcd5f  LIVE MATCH
+  live match: True
+
+SOURCES SEEN ON DISK
+  (none found - the repo copy is the only source)
+  mirrors (never copy from, never publish to):
+    D:\chatagent\games\lattice-corridor

@@ -1,0 +1,73 @@
+==============================================================================
+LATTICE CRYPT - ENGINEERING INDEX
+==============================================================================
+slug        lattice-crypt
+live        https://excavationpro.ca/games/lattice-crypt/
+repo        D:\excavationpro-ca\games\lattice-crypt
+project     <PROJECTS>\lattice-crypt
+engine      web  (static page)
+genre       action, co-op, dungeon
+
+FILES BY KIND
+  image=267, js=9, data=9, html=3, css=2, doc=1
+  total 26.2 MB in 291 files
+
+SCRIPTS (largest first)
+      282.4 KB  game.js
+       74.9 KB  tale.js
+       53.4 KB  campaign.js
+       18.0 KB  studio.js
+       12.8 KB  tools/crypt_studio_qa.js
+        7.7 KB  tools/crypt_campaign_check.js
+        6.9 KB  radio.js
+        3.5 KB  tools/crypt_studio_smoke.js
+        2.4 KB  tools/crypt_tale_smoke.js
+
+ASSET FOLDERS (images / audio / models)
+  assets/foes/32                       image=60
+  assets/foes/64                       image=60
+  assets/foes/src                      image=26
+  assets/heroes/64                     image=26
+  assets/heroes/src                    image=26
+  assets                               image=22
+  assets/pets/64                       image=20
+  assets/tiles/src                     image=16
+  assets/pets/src                      image=10
+  .                                    image=1
+
+PAGE REFERENCES (index.html)
+  https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0646320966060599
+  https://excavationpro.ca/games/lattice-crypt/
+  ./favicon.svg
+  https://fonts.googleapis.com
+  https://fonts.gstatic.com
+  https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Syne:wght@600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap
+  ./game.css?v=22
+  ./tale.css?v=4
+  /games/hub.css?v=2
+  /games/lygo-gate.css?v=1
+  /games/lygo-gate.js?v=1
+  /
+  /games/
+  https://www.paypal.com/paypalme/ExcavationPro
+  ./ledger.html
+  /games/
+  https://www.paypal.com/paypalme/ExcavationPro
+  ./radio.js?v=3
+  /games/arcade-ledger.js?v=5
+  ./campaign.js?v=10
+  ./studio.js?v=8
+  ./tale.js?v=3
+  ./game.js?v=72
+
+VERSIONS
+  index.html                         7f7a599fb5d6652a  LIVE MATCH
+  game.js                            031c9a2cba24ac84  LIVE MATCH
+  tale.js                            912817ec9095eb63  LIVE MATCH
+  campaign.js                        04020087084b1802  LIVE MATCH
+  live match: True
+
+SOURCES SEEN ON DISK
+  (none found - the repo copy is the only source)
+  mirrors (never copy from, never publish to):
+    D:\chatagent\games\lattice-crypt

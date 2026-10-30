@@ -1,0 +1,31 @@
+# local environments and build output
+.venv/
+.venv-bark/
+.venv-kokoro/
+/dist/
+/build/
+__pycache__/
+.pytest_cache/
+# runtime state and the user's own work (root-anchored: vendored data/ dirs must survive)
+/data/
+/jobs/
+/.forge-briefs/
+/projects/
+# heavy third-party payloads (install from the Forge UI, or copy in yourself)
+/tools/audio-studio-mcp/
+/tools/TripoSR/
+/tools/Godot/
+/tools/Pixelorama/
+/tools/threeui/
+/tools/bark-model/
+/tools/gltfpack/
+# the vendored tool's own build output
+/tools/img2threejs/grimoire/build/
+# credentials and clutter
+.env
+*.key
+*.pem
+*.bak
+*.bak-*
+*.log
+*.tmp

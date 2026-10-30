@@ -1,0 +1,33 @@
+==============================================================================
+LATTICE ARCADE - ENGINEERING INDEX
+==============================================================================
+slug        lattice-arcade
+live        https://excavationpro.ca/games/lattice-arcade/
+repo        D:\excavationpro-ca\games\lattice-arcade
+project     <PROJECTS>\lattice-arcade
+engine      web  (static page)
+genre       arcade, generator
+
+FILES BY KIND
+  image=4, other=2, html=1, js=1
+  total 0.7 MB in 8 files
+
+SCRIPTS (largest first)
+      284.5 KB  assets/index-CIrj-vVk.js
+
+ASSET FOLDERS (images / audio / models)
+  .                                    image=4
+
+PAGE REFERENCES (index.html)
+  https://cdn.tailwindcss.com
+  https://excavationpro.ca/games/lattice-arcade/
+  ./favicon.svg
+  ./assets/index-CIrj-vVk.js
+
+VERSIONS
+  index.html                         bb9e274ccace8d5c  LIVE MATCH
+  assets/index-CIrj-vVk.js           304d89438f10db91  LIVE MATCH
+  live match: True
+
+SOURCES SEEN ON DISK
+  (none found - the repo copy is the only source)

@@ -1,0 +1,264 @@
+{
+  "policy": {
+    "preferred": "CC0, then CC-BY with attribution, then project-owned/generated",
+    "review_required": [
+      "CC-BY",
+      "CC-BY-SA",
+      "custom",
+      "paid",
+      "AI-generated"
+    ],
+    "never": [
+      "unknown provenance",
+      "ripped game assets",
+      "unlicensed fan art",
+      "paid asset without approval"
+    ],
+    "required_fields": [
+      "source_url",
+      "license",
+      "attribution",
+      "path",
+      "hash",
+      "owner",
+      "task"
+    ]
+  },
+  "sources": [
+    {
+      "id": "kenney",
+      "name": "Kenney",
+      "url": "https://kenney.nl/assets",
+      "kinds": [
+        "2d",
+        "3d",
+        "ui",
+        "audio",
+        "fonts"
+      ],
+      "license": "CC0",
+      "attribution_required": false,
+      "notes": "Game-ready packs; check each pack page.",
+      "download_hosts": [
+        "kenney.nl"
+      ]
+    },
+    {
+      "id": "polyhaven",
+      "name": "Poly Haven",
+      "url": "https://polyhaven.com",
+      "kinds": [
+        "hdri",
+        "texture",
+        "3d-model"
+      ],
+      "license": "CC0",
+      "attribution_required": false,
+      "notes": "HDRIs, PBR textures, models; record exact asset URL.",
+      "download_hosts": [
+        "polyhaven.com",
+        "dl.polyhaven.org"
+      ]
+    },
+    {
+      "id": "ambientcg",
+      "name": "ambientCG",
+      "url": "https://ambientcg.com",
+      "kinds": [
+        "texture",
+        "hdri",
+        "3d-model"
+      ],
+      "license": "CC0",
+      "attribution_required": false,
+      "notes": "PBR materials; check map set and resolution.",
+      "download_hosts": [
+        "ambientcg.com",
+        "acg-media.struffelproductions.com"
+      ]
+    },
+    {
+      "id": "quaternius",
+      "name": "Quaternius",
+      "url": "https://quaternius.com",
+      "kinds": [
+        "3d-model",
+        "animation"
+      ],
+      "license": "CC0",
+      "attribution_required": false,
+      "notes": "Low-poly packs; check scale and rig.",
+      "download_hosts": [
+        "quaternius.com",
+        "raw.githubusercontent.com",
+        "github.com"
+      ]
+    },
+    {
+      "id": "opengameart",
+      "name": "OpenGameArt",
+      "url": "https://opengameart.org",
+      "kinds": [
+        "2d",
+        "3d",
+        "audio",
+        "ui"
+      ],
+      "license": "per-asset (CC0/CC-BY/CC-BY-SA/GPL)",
+      "attribution_required": true,
+      "notes": "Per-asset licence is authoritative; record author and licence URL.",
+      "download_hosts": [
+        "opengameart.org"
+      ]
+    },
+    {
+      "id": "freesound",
+      "name": "Freesound",
+      "url": "https://freesound.org",
+      "kinds": [
+        "audio"
+      ],
+      "license": "per-asset (CC0/CC-BY/CC-BY-NC)",
+      "attribution_required": true,
+      "notes": "Reject NC for commercial use; record sound ID and licence.",
+      "download_hosts": [
+        "freesound.org",
+        "cdn.freesound.org"
+      ]
+    },
+    {
+      "id": "pixabay",
+      "name": "Pixabay",
+      "url": "https://pixabay.com",
+      "kinds": [
+        "image",
+        "video",
+        "audio"
+      ],
+      "license": "Pixabay Content License",
+      "attribution_required": false,
+      "notes": "Check current licence; avoid identifiable people/brands.",
+      "download_hosts": [
+        "pixabay.com",
+        "cdn.pixabay.com"
+      ]
+    },
+    {
+      "id": "mixamo",
+      "name": "Mixamo",
+      "url": "https://www.mixamo.com",
+      "kinds": [
+        "animation",
+        "character"
+      ],
+      "license": "Adobe Mixamo terms",
+      "attribution_required": false,
+      "notes": "Account required; check redistribution/engine terms; record clip ID.",
+      "download_hosts": [
+        "mixamo.com"
+      ]
+    },
+    {
+      "id": "itch-free",
+      "name": "itch.io Free Assets",
+      "url": "https://itch.io/game-assets/free",
+      "kinds": [
+        "2d",
+        "3d",
+        "audio",
+        "ui",
+        "fonts"
+      ],
+      "license": "per-asset",
+      "attribution_required": true,
+      "notes": "Read each page; many are custom licences.",
+      "download_hosts": [
+        "itch.io",
+        "img.itch.zone"
+      ]
+    },
+    {
+      "id": "unity-asset-store",
+      "name": "Unity Asset Store",
+      "url": "https://assetstore.unity.com",
+      "kinds": [
+        "2d",
+        "3d",
+        "audio",
+        "ui",
+        "tools"
+      ],
+      "license": "Unity Asset Store EULA",
+      "attribution_required": false,
+      "notes": "Free/paid EULA is not open source; requires approval and licence record.",
+      "download_hosts": [
+        "assetstore.unity.com",
+        "assetstorev1-prd-cdn.unity3d.com"
+      ]
+    },
+    {
+      "id": "sketchfab",
+      "name": "Sketchfab",
+      "url": "https://sketchfab.com",
+      "kinds": [
+        "3d-model"
+      ],
+      "license": "per-model (CC0/CC-BY/CC-BY-NC/custom)",
+      "attribution_required": true,
+      "notes": "Filter by downloadable + licence; reject NC for commercial.",
+      "download_hosts": [
+        "sketchfab.com",
+        "media.sketchfab.com"
+      ]
+    },
+    {
+      "id": "nvidia-simready",
+      "name": "NVIDIA SimReady Central",
+      "url": "https://huggingface.co/spaces/nvidia/simready-central",
+      "kinds": [
+        "3d-model",
+        "reference"
+      ],
+      "license": "CC BY 4.0 (per dataset; verify exact card)",
+      "attribution_required": true,
+      "notes": "OpenUSD simulation-ready assets on Hugging Face. Manual selection only; dataset can be multi-GB, above the 20MB asset-fetch cap. Verify each OEM dataset licence, import via Blender and export GLB.",
+      "download_hosts": [
+        "huggingface.co",
+        "cdn-lfs.huggingface.co",
+        "cdn-lfs-us-1.huggingface.co"
+      ]
+    },
+    {
+      "id": "threejsassets",
+      "name": "ThreeJS Assets — free tier",
+      "url": "https://threejsassets.com/assets/free",
+      "kinds": [
+        "3d-model",
+        "reference"
+      ],
+      "license": "Free Commercial License (project use; no resale/mirror/redistribution)",
+      "attribution_required": false,
+      "notes": "937 free web-optimized GLB assets; verify the exact asset page/pack exceptions; never mirror or redistribute files or download access. MCP connector requires a signed-in account.",
+      "download_hosts": [
+        "threejsassets.com",
+        "cdn.threejsassets.com"
+      ]
+    },
+    {
+      "id": "polyfork",
+      "name": "Polyfork",
+      "url": "https://polyfork.dev",
+      "kinds": [
+        "3d-model",
+        "reference"
+      ],
+      "license": "free (verify the per-pack terms before commercial use)",
+      "attribution_required": false,
+      "notes": "2,600+ parametric game-ready glTF models, +200/week. Parameters cover colour, wear, season and state, so one model can be authored to the art bible instead of recoloured by hand. Intake 2026-10-27 (x.com/Polyfork3d).",
+      "download_hosts": [
+        "polyfork.dev",
+        "cdn.polyfork.dev"
+      ]
+    }
+  ]
+}

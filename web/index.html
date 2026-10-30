@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="/web/forge.ico" type="image/x-icon">
+  <title>LYGO FORGE — local game studio</title>
+<link rel="stylesheet" href="/web/style.css">
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar" id="sidebar">
+    <div class="brand">
+      <div class="mark">Δ9</div>
+      <div><b>LYGO</b><span>FORGE</span></div>
+      <button class="icon collapse" id="collapse" title="Collapse" aria-label="Collapse sidebar">‹</button>
+    </div>
+
+    <div class="side-actions">
+      <button class="primary" id="newProject">＋ New project</button>
+      <button class="ghost" id="openProject">Open existing</button>
+    </div>
+
+    <div class="side-label">Projects <span id="projectCount">0</span></div>
+    <div class="projects" id="projects"></div>
+
+    <div class="side-foot">
+      <div class="route"><i class="dot cyan" id="hmDot"></i> LYGO Engine <b id="hmState">checking</b></div>
+      <div class="route"><i class="dot green"></i> OpenCode <b id="ocState">checking</b></div>
+      <div class="route"><i class="dot amber" id="nvDot"></i> NVIDIA free <b id="nvState">bridge</b></div>
+      <div class="route"><i class="dot cyan" id="lqDot"></i> LYGO Engine <b id="lqState">bridge</b></div>
+      <div class="route" id="lygoBrowserBtn" role="button" tabindex="0" style="cursor:pointer"
+           title="Launch the LYGO Browser - Bookmark Bible, agent + human (lygo://browser)"><i class="dot" id="bsDot" style="background:#5a646c"></i> LYGO Browser <b id="bsState">offline</b></div>
+      <div class="offline">No account · no credits · no store</div>
+    </div>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <div class="crumbs"><span>LYGO FORGE</span><i>/</i><strong id="crumbProject">no project</strong></div>
+      <div class="top-actions">
+        <button class="ghost small" id="openFolder">Open folder</button>
+        <button class="ghost small" id="refreshPreview" title="Reload the frame and report the SHA-256 + age of the file being served">&#8635; REFRESH</button>
+        <button class="ghost small" id="dispatcherOpen">Dispatcher</button>
+        <button class="ghost small" id="gauntletOpen">Gauntlet</button>
+        <button class="ghost small" id="workflowOpen">Workflow</button>
+        <button class="ghost small" id="planOpen">Plan</button>
+          <button class="ghost small" id="buildOpen" title="The build contract: what must physically exist">Build</button>
+          <button class="primary small" id="freeBuildOpen" title="Build anything, no task required - pick a worker and type the instruction">&#9889; Free build</button>
+        <button class="ghost small" id="assetsOpen">Assets</button>
+        <button class="ghost small" id="skillsOpen">Skills</button>
+        <button class="ghost small" id="schematicOpen">Schematic</button>
+        <button class="ghost small" id="notesOpen">Notes</button>
+        <button class="ghost small" id="harnessHelp">Harness</button>
+        <button class="ghost small" id="brainOpen">Brain</button>
+        <button class="ghost small" id="pixelOpen" title="Pixel-art editor (Piskel) - exports drop into assets/_inbox">Pixel</button>
+        <button class="ghost small" id="apiHelp">Agent API</button>
+      </div>
+    </header>
+    <div id="consoleBar"><span id="consoleChip">console…</span></div>
+
+    <div class="railwrap"><div class="rail" id="rail"></div></div>
+
+    <div class="workspace">
+      <section class="chatpane">
+        <div class="panehead">
+          <div>
+            <p class="kicker">BUILD DESK</p>
+            <h1 id="projectTitle">Choose a project</h1>
+            <p class="sub" id="projectPath">Create a new game or open an existing folder.</p>
+          </div>
+          <span class="badge" id="projectKind">HTML5</span>
+        </div>
+
+        <div class="harnessline">
+          <label>SPECIALIST<select id="specialist"></select></label>
+          <label>TASK<select id="task"></select></label>
+          <button class="ghost small" id="dispatchTask" disabled>Dispatch task</button>
+          <button class="ghost small" id="markDone" disabled>Mark done</button>
+        </div>
+
+        <div class="taskbox" id="taskbox">
+          <div class="taskempty">Select a project and task.</div>
+        </div>
+
+        <div class="quick" id="quick">
+          <button data-p="Polish the game loop, fix bugs, and make the first five seconds feel finished. Test it end to end.">Polish pass</button>
+          <button data-p="Audit the game for console errors, broken controls, mobile overflow, and unfinished placeholders. Fix everything you find, then test.">Debug pass</button>
+          <button data-p="Add a meaningful progression system with clear feedback, balancing, and a polished end state. Test it.">Add progression</button>
+          <button data-p="Review the visuals against a high-quality commercial browser game. Improve lighting, particles, UI hierarchy, and game feel without changing the core rules.">Visual pass</button>
+        </div>
+
+        <div class="composer">
+          <div class="composer-top">
+            <label class="modelwrap">MODEL
+              <select id="model"></select>
+            </label>
+            <span class="model-route" id="modelRoute">LYGO Engine · local</span>
+          </div>
+          <textarea id="prompt" placeholder="Message the Forge Master…" autocomplete="off"></textarea>
+          <div class="composer-bottom">
+            <span class="hint" id="composerHint">Default local brain: LYGO Engine on 11441. Start LYGO Agent Manager to boot it.</span>
+            <button class="stop" id="stop" disabled>Stop</button>
+            <button class="stop" id="autoRun" title="Run the whole board from this chat: dispatch, verify, mark done, next">&#9654; AUTORUN</button>
+            <button class="build" id="build" disabled>Ask Hermes <kbd>Ctrl ↵</kbd></button>
+          </div>
+        </div>
+
+        <section class="logpanel">
+          <div class="loghead"><span>BUILD LOG</span><span id="autoRunState" class="jobstate">autorun off</span><span id="jobState" class="jobstate">idle</span></div>
+          <pre id="log">Ready.</pre>
+        </section>
+      </section>
+
+      <section class="previewpane">
+        <div class="previewhead">
+          <span>LIVE PREVIEW</span>
+          <div><span id="previewInfo">no project</span><button class="icon" id="fullPreview" title="Full screen">⛶</button></div>
+        </div>
+        <div class="syncbar">
+          <button class="primary small" id="previewRefresh" title="Reload the preview and report the served file: SHA-256, age, and how many project files are newer">&#8635; REFRESH</button>
+          <button class="ghost small" id="gitPull" title="Fetch origin and copy the repo's game into site/">Pull</button>
+          <button class="ghost small" id="gitSync" title="Copy site/ into the repo checkout (stages, no commit)">Sync</button>
+          <button class="ghost small" id="gitPush" title="Commit the game folder and push to origin">Push</button>
+          <button class="primary small" id="gitPost" title="Ship: sync, commit, push, then verify the live page">Post live</button>
+          <span id="gitTargetWrap" class="gittarget" style="display:none" title="Which repo Pull/Sync/Push act on"><button type="button" class="mini" id="gitTargetSite">SITE</button><button type="button" class="mini" id="gitTargetUnity">UNITY</button></span>
+          <button class="primary small" id="bootUnity" title="Open this game's Unity project in the Unity editor">BOOT UNITY</button>
+          <span id="gitStatus" class="gitstatus">—</span>
+        </div>
+        <div class="frame"><iframe id="previewFrame" title="Game preview" sandbox="allow-scripts allow-same-origin allow-forms allow-modals allow-popups"></iframe><div class="empty" id="previewEmpty"><b>No game loaded</b><span>Select a project or create one.</span></div></div>
+      </section>
+    </div>
+  </main>
+</div>
+
+<div class="modal" id="modal" hidden>
+  <div class="sheet">
+    <button class="icon close" id="closeModal" aria-label="Close">×</button>
+    <p class="kicker" id="modalKicker">NEW PROJECT</p>
+    <h2 id="modalTitle">Start a game</h2>
+    <p class="sub" id="modalSub">A local three.js starter, ready for OpenCode.</p>
+    <div id="modalBody"></div>
+    <div class="modal-actions"><button class="ghost" id="modalCancel">Cancel</button><button class="primary" id="modalGo">Create</button></div>
+  </div>
+</div>
+
+<div class="dispatcher" id="dispatcher" hidden>
+  <div class="dhead">
+    <div><p class="kicker">FORGE DISPATCHER</p><h2>Linked agents <span id="dLinked">0</span> ready</h2></div>
+    <div class="dhead-actions">
+      <button class="ghost small" id="dRefresh">Refresh</button>
+      <button class="icon close" id="dClose" aria-label="Close Dispatcher">×</button>
+    </div>
+  </div>
+  <div class="dmaster" id="dMaster"></div>
+  <div class="dsection-head"><span>AGENTS</span><span class="sub">Worker status, skills, current job and stats</span></div>
+  <div class="agentgrid" id="dAgents"></div>
+  <div class="dsection-head"><span>JOB BOARD</span><span class="sub">Master dispatch queue</span></div>
+  <div class="jobcreate">
+    <label>TITLE<input id="dTitle" placeholder="Job title"></label>
+    <label>SKILL<select id="dSkill"></select></label>
+    <label class="wide">BRIEF<input id="dBrief" placeholder="What should this worker produce?"></label>
+    <button class="primary" id="dCreate">Queue job</button>
+    <button class="ghost" id="dTest">Run read-only test on current game</button>
+  </div>
+  <div class="jobs" id="dJobs"></div>
+</div>
+<script src="/web/app.js"></script>
+<script>
+/* LYGO Browser launch + live bridge status. Additive: touches nothing in app.js. */
+(function () {
+  'use strict';
+  var BASE = 'http://127.0.0.1:9337';
+  var btn = document.getElementById('lygoBrowserBtn');
+  var dot = document.getElementById('bsDot');
+  var side = document.getElementById('bsState');
+
+  function paint(state, text) {
+    var color = state === 'on' ? '#82f0b0' : state === 'wait' ? '#ffb454' : '#5a646c';
+    if (side) { side.textContent = text; side.style.color = color; }
+    if (dot) { dot.style.background = color; }
+  }
+
+  function probe() {
+    fetch(BASE + '/api/health', { cache: 'no-store' })
+      .then(function (r) { return r.json(); })
+      .then(function (h) { paint('on', (h.recordCount || 0) + ' links'); })
+      .catch(function () { paint('off', 'offline'); });
+  }
+
+  function launch() {
+    paint('wait', 'launching');
+    var f = document.createElement('iframe');
+    f.style.cssText = 'position:absolute;width:0;height:0;border:0;visibility:hidden';
+    f.src = 'lygo://browser';
+    document.body.appendChild(f);
+    setTimeout(function () { f.remove(); }, 4000);
+    setTimeout(probe, 2500); setTimeout(probe, 6000); setTimeout(probe, 12000);
+  }
+
+  if (btn) btn.addEventListener('click', launch);
+  if (btn) btn.addEventListener('keydown', function (ev) {
+    if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); launch(); }
+  });
+  probe();
+  setInterval(probe, 30000);
+})();
+</script>
+</body>
+</html>

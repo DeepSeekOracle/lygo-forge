@@ -1,0 +1,166 @@
+==============================================================================
+LYGO 98 - ENGINEERING INDEX
+==============================================================================
+slug        haven-desk
+live        https://excavationpro.ca/games/haven-desk/
+repo        D:\excavationpro-ca\games\haven-desk
+project     <PROJECTS>\haven-desk
+engine      web  (static page)
+genre       desk, retro
+
+FILES BY KIND
+  image=631, audio=105, data=53, js=41, doc=16, other=6, css=3, html=2
+  total 68.1 MB in 857 files
+
+SCRIPTS (largest first)
+      246.7 KB  veil-stories.js
+       83.2 KB  desk-more.js
+       70.4 KB  desk.js
+       62.5 KB  veil-workers.js
+       61.3 KB  veil-story-manifest.js
+       57.9 KB  veil-data.js
+       45.3 KB  veil.js
+       41.8 KB  veil-plates.js
+       39.0 KB  veil-atlas.js
+       23.9 KB  veil-start.js
+       20.6 KB  veil-echoes.js
+       20.4 KB  veil-lightfather.js
+       20.2 KB  desk-lore.js
+       14.8 KB  veil-onboard.js
+       13.4 KB  veil-audio.js
+       13.4 KB  veil-chat.js
+       12.4 KB  veil-arcade.js
+        9.7 KB  veil-cabinets.js
+        9.5 KB  veil-audio-extra.js
+        9.4 KB  veil-anchors.js
+        9.0 KB  veil-lygo-papers.js
+        8.3 KB  veil-casewall.js
+        5.9 KB  veil-arc.js
+        5.8 KB  veil-openmic.js
+        5.7 KB  veil-gallery.js
+
+ASSET FOLDERS (images / audio / models)
+  assets/plates                        image=300
+  assets/voice                         audio=54
+  assets/sfx                           audio=41
+  assets/backgrounds                   image=15
+  assets/openmic                       audio=10
+  assets/shots                         image=8
+  assets/story/2023-03-14              image=6
+  assets/story/1969-07-20              image=5
+  assets/story/1971-11-15              image=5
+  assets/story/1973-04-03              image=5
+  assets/story/1975-01-01              image=5
+  assets/story/1976-04-01              image=5
+  assets/story/1977-09-05              image=5
+  assets/story/1980-12-31              image=5
+  assets/story/1981-08-12              image=5
+  assets/story/1983-01-01              image=5
+  assets/story/1984-01-24              image=5
+  assets/story/1985-11-20              image=5
+  assets/story/1988-11-02              image=5
+  assets/story/1989-11-09              image=5
+  assets/story/1990-11-12              image=5
+  assets/story/1991-08-06              image=5
+  assets/story/1993-04-22              image=5
+  assets/story/1994-12-15              image=5
+  assets/story/1995-08-24              image=5
+  assets/story/1996-07-04              image=5
+  assets/story/1997-05-11              image=5
+  assets/story/1997-09-15              image=5
+  assets/story/1998-03-14              image=5
+  assets/story/1999-12-31              image=5
+  assets/story/2001-01-15              image=5
+  assets/story/2003-04-28              image=5
+  assets/story/2004-02-04              image=5
+  assets/story/2005-02-14              image=5
+  assets/story/2006-03-21              image=5
+  assets/story/2007-01-09              image=5
+  assets/story/2008-10-31              image=5
+  assets/story/2009-01-03              image=5
+  assets/story/2010-04-03              image=5
+  assets/story/2011-10-04              image=5
+  assets/story/2012-08-06              image=5
+  assets/story/2012-09-30              image=5
+  assets/story/2012-12-21              image=5
+  assets/story/2014-06-10              image=5
+  assets/story/2015-10-21              image=5
+  assets/story/2015-12-11              image=5
+  assets/story/2016-03-10              image=5
+  assets/story/2017-06-12              image=5
+  assets/story/2018-06-11              image=5
+  assets/story/2019-06-01              image=5
+  assets/story/2020-05-28              image=5
+  assets/story/2021-01-05              image=5
+  assets/story/2022-08-22              image=5
+  assets/story/2022-11-30              image=5
+  assets/story/2024-05-13              image=5
+  assets/story/2026-09-27              image=5
+  assets/story/2026-10-23              image=5
+  assets/story/2027-01-01              image=5
+  assets/story/2029-04-04              image=5
+  assets/story/2031-01-01              image=5
+  assets/story/2033-06-06              image=5
+  assets/story/2036-09-09              image=5
+  assets/story/2038-01-19              image=5
+  assets/story/2040-12-31              image=5
+  assets/story/2042-06-06              image=5
+  assets/story/2045-09-01              image=5
+  assets/veil                          image=5
+  .                                    image=1
+  assets                               image=1
+
+PAGE REFERENCES (index.html)
+  https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0646320966060599
+  https://excavationpro.ca/games/haven-desk/
+  https://excavationpro.ca/games/haven-desk/assets/og.jpg?v=lygo98
+  ./favicon.svg
+  ./desk.css?v=20261025-clock
+  ./veil.css?v=20261025-disks
+  ./veil-start.css?v=20261025-journal
+  /games/
+  /games/
+  /games/
+  ./desk.js?v=20261025-clock
+  ./desk-more.js?v=20261025-story
+  ./desk-lore.js?v=20261025-story
+  ./veil-data.js?v=20261025-story
+  ./veil-atlas.js?v=20261025-story
+  ./veil-arc.js?v=20261025-journal
+  ./veil-anchors.js?v=20261025-anchors
+  ./veil-stories.js?v=20261025-story
+  ./veil-story-content.js?v=20261025-story
+  ./veil-workers.js?v=20261025-story
+  ./veil-arcade.js?v=20261025-story
+  ./veil-echoes-authored.js?v=20261025-story
+  ./veil-echoes.js?v=20261025-story
+  ./veil-plates.js?v=20261025-story
+  ./veil-plates-ui.js?v=20261025-story
+  ./veil-lightfather.js?v=20261025-story
+  ./veil-lygo-papers.js?v=20261025-anchors
+  ./veil-openmic.js?v=20261025-story
+  ./veil-openmic-ui.js?v=20261025-story
+  ./veil-audio-extra.js?v=20261025-story
+  ./veil-audio.js?v=20261025-story
+  ./veil-lore.js?v=20261025-story
+  ./veil-story-manifest.js?v=20261025-story
+  ./veil-kooter.js?v=20261025-story
+  ./veil-story.js?v=20261025-story
+  ./veil.js?v=20261025-journal
+  ./veil-cabinets.js?v=20261025-disks
+  ./veil-casewall.js?v=20261025-story
+  ./veil-start.js?v=20261025-anchors
+  ./veil-onboard.js?v=20261025-story
+
+VERSIONS
+  index.html                         7f76f11457371444  LIVE MATCH
+  veil-stories.js                    397f6f6a3dc44974  LIVE MATCH
+  desk-more.js                       98ddf6a9c7323691  LIVE MATCH
+  desk.js                            807a0fd29250a7d0  LIVE MATCH
+  live match: True
+
+SOURCES SEEN ON DISK
+  <DRIVE_D>\LYGO\asset-foundry\packs\haven-desk
+  <PROJECTS>\haven-desk
+  mirrors (never copy from, never publish to):
+    D:\chatagent\games\haven-desk

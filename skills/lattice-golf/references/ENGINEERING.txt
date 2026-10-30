@@ -1,0 +1,62 @@
+==============================================================================
+LATTICE GOLF - ENGINEERING INDEX
+==============================================================================
+slug        lattice-golf
+live        https://excavationpro.ca/games/lattice-golf/
+repo        D:\excavationpro-ca\games\lattice-golf
+project     <PROJECTS>\lattice-golf
+engine      web  (three.js)
+genre       sports, golf
+
+FILES BY KIND
+  image=13, js=5, html=2, data=2, doc=2, css=1, other=1
+  total 3.7 MB in 26 files
+
+SCRIPTS (largest first)
+      131.2 KB  game.js
+       58.3 KB  golf3d.js
+       10.4 KB  tools/golf_sim_check.js
+        5.6 KB  radio.js
+        2.6 KB  lobby.js
+
+ASSET FOLDERS (images / audio / models)
+  assets                               image=12
+  .                                    image=1
+
+PAGE REFERENCES (index.html)
+  https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0646320966060599
+  https://excavationpro.ca/games/lattice-golf/
+  ./favicon.svg
+  https://excavationpro.ca/games/lattice-golf/assets/og.jpg
+  https://fonts.googleapis.com
+  https://fonts.gstatic.com
+  https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Syne:wght@600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap
+  ./game.css?v=25
+  /games/hub.css?v=2
+  /games/lygo-gate.css?v=1
+  /games/lygo-gate.js?v=1
+  /
+  /games/
+  https://www.paypal.com/paypalme/ExcavationPro
+  ./assets/g-mira.jpg?v=2
+  /games/
+  https://www.paypal.com/paypalme/ExcavationPro
+  https://cdn.jsdelivr.net/npm/three@0.160.1/build/three.min.js
+  ./radio.js
+  ./golf3d.js?v=21
+  ./lobby.js?v=1
+  /games/arcade-ledger.js?v=5
+  ./game.js?v=42
+
+VERSIONS
+  index.html                         c5375f7d12940aad  LIVE MATCH
+  game.js                            de77b8d36765cd90  LIVE MATCH
+  golf3d.js                          0f553f0d2d2690e4  LIVE MATCH
+  tools/golf_sim_check.js            f91831552c29b155  LIVE MATCH
+  live match: True
+
+SOURCES SEEN ON DISK
+  (none found - the repo copy is the only source)
+  mirrors (never copy from, never publish to):
+    D:\chatagent\games\lattice-golf
+    D:\eternalhaven\games\lattice-golf

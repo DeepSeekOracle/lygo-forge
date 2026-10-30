@@ -1,0 +1,26 @@
+{
+  "name": "jev-mcp",
+  "version": "0.1.0",
+  "description": "Community MCP adapter for TypeSafe Jev structured decisions",
+  "type": "module",
+  "private": true,
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node src/cli.js",
+    "test": "node --test",
+    "check": "node --check src/cli.js && node --check src/server.js && node --check src/decisions.js && node --check src/http.js",
+    "test:core": "node --test --test-skip-pattern='loopback HTTP'",
+    "smoke:live": "node examples/live-smoke.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/asimons81/jev-mcp.git"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.32.1",
+    "zod": "3.25.76"
+  }
+}

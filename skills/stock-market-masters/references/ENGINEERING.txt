@@ -1,0 +1,58 @@
+==============================================================================
+STOCK MARKET MASTERS - ENGINEERING INDEX
+==============================================================================
+slug        stock-market-masters
+live        https://excavationpro.ca/games/stock-market-masters/
+repo        D:\excavationpro-ca\games\stock-market-masters
+project     <PROJECTS>\stock-market-masters
+engine      web  (static page)
+genre       strategy, market
+
+FILES BY KIND
+  image=13, html=3, js=2, data=2, other=2, css=1, doc=1
+  total 3.3 MB in 24 files
+
+SCRIPTS (largest first)
+       39.1 KB  game.js
+        5.5 KB  radio.js
+
+ASSET FOLDERS (images / audio / models)
+  assets                               image=12
+  .                                    image=1
+
+PAGE REFERENCES (index.html)
+  https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0646320966060599
+  https://eternalhaven.ca/games/stock-market-masters/
+  ./favicon.svg
+  /games/hub.css?v=2
+  https://fonts.googleapis.com
+  https://fonts.gstatic.com
+  https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Syne:wght@600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap
+  ./game.css
+  /games/lygo-gate.css?v=1
+  /games/lygo-gate.js?v=1
+  /
+  /games/
+  https://www.paypal.com/paypalme/ExcavationPro
+  https://asiancoastline.com/listen.html
+  https://ffm.to/eovnvo9
+  https://open.spotify.com/artist/6CkZ4bN2xu3WRKbjEL3u2S
+  https://music.apple.com/us/artist/excavationpro/1586588545
+  https://music.youtube.com/channel/UCnCf9gjhMEfUFPvGkdlUabQ
+  /games/
+  ./disclaimer.html
+  https://www.paypal.com/paypalme/ExcavationPro
+  ./radio.js
+  ./game.js?v=1
+
+VERSIONS
+  index.html                         c8a9f0d3febabf68  LIVE MATCH
+  game.js                            d1d3c34a04498f9b  LIVE MATCH
+  radio.js                           3205373d7cb6ef82  LIVE MATCH
+  live match: True
+
+SOURCES SEEN ON DISK
+  (none found - the repo copy is the only source)
+  mirrors (never copy from, never publish to):
+    D:\chatagent\games\stock-market-masters
+    D:\eternalhaven\games\stock-market-masters

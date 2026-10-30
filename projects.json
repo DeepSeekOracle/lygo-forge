@@ -1,0 +1,13 @@
+{
+  "projects": {
+    "forge-smoke": {
+      "path": "<USER>\\AI Games\\forge-smoke"
+    },
+    "lattice-arena": {
+      "path": "D:\\chatagent\\games\\lattice-arena"
+    },
+    "battle-tv-unity": {
+      "path": "<USER>\\battle-tv-unity"
+    }
+  }
+}

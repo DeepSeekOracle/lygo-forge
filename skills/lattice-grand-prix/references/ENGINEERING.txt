@@ -1,0 +1,40 @@
+==============================================================================
+LATTICE GRAND PRIX - ENGINEERING INDEX
+==============================================================================
+slug        lattice-grand-prix
+live        https://excavationpro.ca/games/lattice-grand-prix/
+repo        D:\excavationpro-ca\games\lattice-grand-prix
+project     <PROJECTS>\lattice-grand-prix
+engine      unity  (Unity WebGL)
+genre       racing
+
+FILES BY KIND
+  image=11, other=4, js=2, html=1, data=1, css=1
+  total 17.6 MB in 20 files
+
+SCRIPTS (largest first)
+       47.0 KB  Build/LatticeGrandPrix-TestRing.loader.js
+        8.5 KB  radio.js
+
+ASSET FOLDERS (images / audio / models)
+  TemplateData                         image=10
+  assets                               image=1
+
+PAGE REFERENCES (index.html)
+  https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0646320966060599
+  https://excavationpro.ca/games/lattice-grand-prix/
+  TemplateData/favicon.ico
+  TemplateData/style.css
+  /games/
+  radio.js?v=1
+
+VERSIONS
+  index.html                         ea27d8f1e1cce436  LIVE MATCH
+  Build/LatticeGrandPrix-TestRing.loader.js 5a51525fc52ee7df  LIVE MATCH
+  radio.js                           eae1b13c1ed7a0c3  LIVE MATCH
+  live match: True
+
+SOURCES SEEN ON DISK
+  <DRIVE_D>\LYGO-UNITY-GAMES\builds\LatticeGrandPrix-TestRing
+  mirrors (never copy from, never publish to):
+    D:\chatagent\games\lattice-grand-prix

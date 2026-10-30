@@ -1,0 +1,72 @@
+==============================================================================
+FISH TANK - ENGINEERING INDEX
+==============================================================================
+slug        fish-tank
+live        https://excavationpro.ca/games/fish-tank/
+repo        D:\excavationpro-ca\games\fish-tank
+project     <PROJECTS>\fish-tank
+engine      web  (three.js)
+genre       sim
+
+FILES BY KIND
+  image=151, audio=8, js=4, html=2, data=1, css=1
+  total 46.3 MB in 167 files
+
+SCRIPTS (largest first)
+      278.4 KB  tank.js
+       40.6 KB  tools/fish_tank_sim_check.js
+       37.8 KB  tools/fish_tank_smoke.js
+        7.5 KB  radio.js
+
+ASSET FOLDERS (images / audio / models)
+  assets/fish                          image=116
+  assets/keepers                       image=18
+  assets                               image=8
+  assets/crew                          image=8
+  assets/sfx                           audio=8
+  .                                    image=1
+
+PAGE REFERENCES (index.html)
+  https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0646320966060599
+  https://excavationpro.ca/games/fish-tank/
+  ./favicon.svg
+  https://fonts.googleapis.com
+  https://fonts.gstatic.com
+  https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=Syne:wght@700;800&family=Source+Sans+3:wght@400;600&display=swap
+  ./tank.css?v=18
+  /games/lygo-gate.css?v=1
+  /games/lygo-gate.js?v=1
+  ./assets/menu.jpg
+  ./ledger.html
+  /games/
+  https://www.paypal.com/paypalme/ExcavationPro
+  https://www.patreon.com/Excavationpro/posts/chatagent-ca-api-170485961
+  /games/
+  https://www.paypal.com/paypalme/ExcavationPro
+  https://www.patreon.com/Excavationpro/posts/chatagent-ca-api-170485961
+  ./ledger.html
+  /games/
+  https://www.paypal.com/paypalme/ExcavationPro
+  https://www.patreon.com/Excavationpro/posts/chatagent-ca-api-170485961
+  https://www.paypal.com/paypalme/ExcavationPro
+  https://excavationpro.ca/sources/
+  https://ffm.to/justin-helmer
+  https://ffm.to/eovnvo9
+  https://www.youtube.com/@justinhelmer
+  https://www.youtube.com/@ExcavationPro
+  https://justinhelmer.ca/
+  /games/arcade-ledger.js?v=5
+  ./radio.js?v=2
+  ./tank.js?v=66
+
+VERSIONS
+  index.html                         6767714399ae2f9e  LIVE MATCH
+  tank.js                            d29074a1dcb8aeb6  LIVE MATCH
+  tools/fish_tank_sim_check.js       b8ee0e4adef4a63a  LIVE MATCH
+  tools/fish_tank_smoke.js           48fc0a538ddf1015  LIVE MATCH
+  live match: True
+
+SOURCES SEEN ON DISK
+  (none found - the repo copy is the only source)
+  mirrors (never copy from, never publish to):
+    D:\chatagent\games\fish-tank

@@ -1,0 +1,53 @@
+==============================================================================
+ETERNAL LATTICE - ENGINEERING INDEX
+==============================================================================
+slug        eternal-lattice
+live        https://excavationpro.ca/games/eternal-lattice/
+repo        D:\excavationpro-ca\games\eternal-lattice
+project     <PROJECTS>\eternal-lattice
+engine      web  (static page)
+genre       cards, campaign
+
+FILES BY KIND
+  image=32, html=2, data=2, css=2, other=1, js=1
+  total 4.2 MB in 40 files
+
+SCRIPTS (largest first)
+      376.0 KB  assets/index-DMSYxDn_.js
+
+ASSET FOLDERS (images / audio / models)
+  art/champs                           image=18
+  __grok/install/assets/homescreen     image=6
+  art                                  image=4
+  .                                    image=3
+  __grok                               image=1
+
+PAGE REFERENCES (index.html)
+  https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0646320966060599
+  ./favicon.svg
+  https://excavationpro.ca/games/eternal-lattice/
+  https://fonts.googleapis.com
+  https://fonts.gstatic.com
+  https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Outfit:wght@400;500;600&display=swap
+  /games/arcade-ledger.js?v=5
+  /games/hall-bridge.js?v=1
+  /games/lygo-gate.css?v=2
+  /games/lygo-gate.js?v=2
+  ./assets/index-DMSYxDn_.js
+  ./assets/index-CAkbq9qW.css
+  /games/hub.css?v=5
+  /games/
+  /games/eternal-lattice/ledger.html
+  /
+
+VERSIONS
+  index.html                         88741cab99ae3e04  LIVE MATCH
+  assets/index-DMSYxDn_.js           808de48141c0a0de  LIVE MATCH
+  live match: True
+
+SOURCES SEEN ON DISK
+  <DRIVE_D>\LYGO APPS\eternal-lattice
+  <USER>\source\lygoeternallattice
+  <EDRIVE>\_tmp_lygo_sites\lygoeternallattice
+  mirrors (never copy from, never publish to):
+    D:\chatagent\games\eternal-lattice
